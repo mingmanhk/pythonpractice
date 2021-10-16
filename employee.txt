@@ -1,0 +1,6 @@
+jim - Salesman
+Dwight - Salesman
+Pam - Receptionist
+Michael - Manager
+Oscar - Accountant
+Victor - CEO
