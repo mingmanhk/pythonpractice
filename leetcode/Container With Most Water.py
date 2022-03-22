@@ -4,7 +4,7 @@ def solution(height):
 
     while left < right:
         # no of block x hight
-        area = (right-1)* min(height[left] , height[right])
+        area = (right-left) * min(height[left] , height[right])
         res= max(res,area)
 
         if height[left] < height[right]:
@@ -14,4 +14,4 @@ def solution(height):
 
     return res
 
-print(solution([1,8,6,2,5,4,8,3,7]))
+print(solution([1,1]))
