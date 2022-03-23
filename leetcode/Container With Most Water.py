@@ -1,3 +1,5 @@
+# simple solution using brute force which it scan all the possible result which it is O(n), but it will cause time out
+
 def solution(height):
     res= 0
     left, right = 0, len(height)-1
