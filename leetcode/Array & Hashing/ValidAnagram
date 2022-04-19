@@ -1,0 +1,22 @@
+def isAnagram(s, t) -> bool:
+        #Check if length t <s 
+        if len(t)!=len(s):
+            return False
+        #Check if t=s
+        if sorted(t)==sorted(s):
+            return True
+        
+        #building hash map
+        countS, countT = {},{}
+        for i in range(len(s)):
+            countS[s[i]] = 1 + countS.get(s[i], 0)
+            countT[t[i]] = 1 + countS.get(t[i], 0)
+            
+        
+        #check if t and r has same matching letter count
+        for c in countS:
+            if countS[c] != countT.get(c, 0):
+                return False
+        return True
+
+print(isAnagram("anagram", "nagaram"))
